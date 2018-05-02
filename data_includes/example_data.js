@@ -31,7 +31,7 @@ var qcond = "AcceptabilityJudgment";
 
 var items = [
 
-    ["practice_sep", "Separator", { transfer: 2000 }],    
+    ["practice_sep", "Separator", { transfer: 1000 }],    
     
     ["sep", "Separator", { transfer: 1000 }],
 
