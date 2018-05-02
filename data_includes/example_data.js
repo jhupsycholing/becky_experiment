@@ -10,7 +10,7 @@ var defaults = [
     },
     "AcceptabilityJudgment", {
         s: '',
-	q: 'Which of these two sentences is more acceptable than the other?"
+	    q: 'Which of these two sentences is more acceptable than the other?',
         showNumbers: true,
         hasCorrect: true,
         leftComment: "", rightComment: ""
