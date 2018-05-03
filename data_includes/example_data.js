@@ -1,6 +1,6 @@
 var shuffleSequence = seq("setcounter","intro","beginning_of_practice", sepWith("practice_sep", "practice"), "practice_sep", "end_of_practice", 
                           sepWith("sep", rshuffle(anyOf('obj_rel_inanim--plur_IS_IV_sing_ES_EV', 'prep_anim--plur_MS_MV_plur_ES', 'obj_rel_no_comp--plur_ES_EV_plur_MS_MV', 'long_vp_coord--sing_MS_LMV_LMV', 'obj_rel_anim--plur_ES_EV_sing_MS_MV', 'obj_rel_no_comp--sing_MS_MV_plur_ES_EV', 'simple_reflexives--sing_MS_ANPHR', 'obj_rel_anim--sing_MS_MV_sing_ES_EV', 'obj_rel_no_comp_inanim--sing_IS_IV_plur_ES_EV', 'obj_rel_no_comp--plur_MS_MV_sing_ES_EV', 'obj_rel_no_comp_inanim--plur_ES_EV_sing_IS_IV', 'obj_rel_anim--plur_MS_MV_plur_ES_EV', 'obj_rel_no_comp_inanim--sing_IS_IV_sing_ES_EV', 'simple_agrmt--plur_MS_MV--4', 'obj_rel_inanim--sing_IS_IV_plur_ES_EV', 'obj_rel_no_comp--plur_MS_MV_plur_ES_EV', 'subj_rel--sing_MS_EV_MV_sing_ES', 'obj_rel_no_comp_inanim--sing_ES_EV_sing_IS_IV', 'obj_rel_inanim--plur_ES_EV_sing_IS_IV', 'obj_rel_no_comp_inanim--sing_ES_EV_plur_IS_IV', 'simple_agrmt--plur_MS_MV--2', 'npi_anim--past', 'simple_agrmt--plur_MS_MV--0', 'stmt_before_reflexive--sing_MS_ANPHR_sing_BS', 'vp_coord--sing_MS_MV_MV', 'obj_rel_no_comp_inanim--plur_IS_IV_sing_ES_EV', 'obj_rel_inanim--sing_ES_EV_sing_IS_IV', 'obj_rel_anim--sing_ES_EV_sing_MS_MV', 'obj_rel_no_comp--sing_MS_MV_sing_ES_EV', 'simple_agrmt--sing_MS_MV--4', 'subj_rel--plur_MS_EV_MV_sing_ES', 'obj_rel_no_comp--sing_ES_EV_plur_MS_MV', 'prep_inanim--plur_IS_IV_sing_ES', 'obj_rel_anim--plur_ES_EV_plur_MS_MV', 'obj_rel_inanim--plur_IS_IV_plur_ES_EV', 'prep_anim--plur_MS_MV_sing_ES', 'reflexives--sing_MS_ANPHR_plur_ES_EV', 'obj_rel_anim--sing_ES_EV_plur_MS_MV', 'obj_rel_no_comp--plur_ES_EV_sing_MS_MV', 'stmt_before_sent--plur_MS_MV_plur_BS', 'npi_inanim--past', 'simple_agrmt--sing_MS_MV--2', 'stmt_before_sent--sing_MS_MV_plur_BS', 'subj_rel--plur_MS_EV_MV_plur_ES', 'stmt_before_reflexive--plur_MS_ANPHR_sing_BS', 'reflexives--plur_MS_ANPHR_sing_ES_EV', 'simple_agrmt--sing_MS_MV--0', 'prep_inanim--sing_IS_IV_plur_ES', 'reflexives--sing_MS_ANPHR_sing_ES_EV', 'obj_rel_no_comp--sing_ES_EV_sing_MS_MV', 'simple_agrmt--plur_MS_MV--3', 'npi_anim--future', 'vp_coord--plur_MS_MV_MV', 'prep_inanim--sing_IS_IV_sing_ES', 'prep_anim--sing_MS_MV_plur_ES', 'simple_reflexives--plur_MS_ANPHR', 'npi_inanim--future', 'simple_agrmt--sing_MS_MV--3', 'obj_rel_inanim--plur_ES_EV_plur_IS_IV', 'subj_rel--sing_MS_EV_MV_plur_ES', 'simple_agrmt--sing_MS_MV--1', 'stmt_before_reflexive--sing_MS_ANPHR_plur_BS', 'simple_agrmt--plur_MS_MV--1', 'obj_rel_anim--sing_MS_MV_plur_ES_EV', 'obj_rel_no_comp_inanim--plur_ES_EV_plur_IS_IV', 'stmt_before_sent--plur_MS_MV_sing_BS', 'obj_rel_inanim--sing_IS_IV_sing_ES_EV', 'long_vp_coord--plur_MS_LMV_LMV', 'stmt_before_sent--sing_MS_MV_sing_BS', 'reflexives--plur_MS_ANPHR_plur_ES_EV', 'obj_rel_anim--plur_MS_MV_sing_ES_EV', 'obj_rel_inanim--sing_ES_EV_plur_IS_IV', 'prep_anim--sing_MS_MV_sing_ES', 'prep_inanim--plur_IS_IV_plur_ES', 'obj_rel_no_comp_inanim--plur_IS_IV_plur_ES_EV', 'stmt_before_reflexive--plur_MS_ANPHR_plur_BS'))
-                                       ), "end_of_experiment");
+                                       ), 'sr', "end_of_experiment");
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -29,11 +29,15 @@ var defaults = [
 
 var qcond = "AcceptabilityJudgment";
 
+var manualSendResults = true;
+
 var items = [
 
     ["practice_sep", "Separator", { transfer: 1000 }],    
     
     ["sep", "Separator", { transfer: 1000 }],
+
+    ['sr','__SendResults__',[]],
 
     ["intro", "Form", {
         html: { include: "example_intro.html" },
