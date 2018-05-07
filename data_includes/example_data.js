@@ -24,6 +24,9 @@ var defaults = [
         hideProgressBar: true,
         continueOnReturn: true,
         saveReactionTime: true
+    },
+    "Message", {
+    	transfer: null
     }
 ];
 
