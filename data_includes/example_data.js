@@ -7665,6 +7665,6 @@ var items = [
 [["npi_inanim--future", [76, 1]], qcond, {as: ["no games that the parents admire will ever be ignored.","the books that no parents admire will ever be ignored."], hasCorrect: 0}],
 
     
-    ["end_of_experiment", "Form", {html: '<p>End of experiment. Please submit this code to Prolific Academic to confirm completion: 3WHZNQCG</p><p>Do you have any feedback for us?</p><textarea rows="5" cols="40" name="feedback" />'}]
+    ["end_of_experiment", "Message", {html: '<p>End of experiment. Please submit this code to Prolific Academic to confirm completion: 3WHZNQCG</p>'}]
                            
 ];
