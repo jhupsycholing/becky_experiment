@@ -864,6 +864,6 @@ var items = [
 [["npi_inanim--future", [80, 1]], qcond, {as: ["no pictures that the ministers love will ever be seen.","the pictures that no ministers love will ever be seen."], hasCorrect: 0}],
 [["npi_inanim--future", [80, 1]], qcond, {as: ["few novels that the assistants like will ever be ignored.","the novels that few assistants like will ever be ignored."], hasCorrect: 0}],
     
-    ["end_of_experiment", "Message", {transfer: null, html: '<p>End of experiment. Please submit this code to Mechanical Turk to confirm completion: 3WHPPQCG. Feel free to close this window.</p>'}]
+    ["end_of_experiment", "Message", {transfer: null, html: '<p>End of experiment. Please submit this code to Mechanical Turk to confirm completion: ABGU783FGG. Feel free to close this window.</p>'}]
                            
 ];
